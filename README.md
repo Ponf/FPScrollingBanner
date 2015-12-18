@@ -3,6 +3,8 @@
 This repo is attemt to create sliding UIImageViews like Scrolling Inset Banner at Apple TV's Top Shelf 
 (https://developer.apple.com/tvos/human-interface-guidelines/icons-and-images/#layered-images).
 
+![Demo](https://github.com/Ponf/FPScrollingBanner/raw/master/demo.gif)
+
 Current feauters:
 - tvOS 9.0+ support
 - Any number of items (the best result with >= 3 items)
