@@ -25,6 +25,7 @@
 - (void)setupImageView {
     _imageView = [[UIImageView alloc] init];
     _imageView.adjustsImageWhenAncestorFocused = YES;
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.contentView addSubview:_imageView];
     self.contentView.backgroundColor = [UIColor clearColor];
     UIView *imageView = _imageView;
