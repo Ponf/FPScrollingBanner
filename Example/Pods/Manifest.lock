@@ -1,0 +1,16 @@
+PODS:
+  - FPScrollingBanner (1.0.0)
+
+DEPENDENCIES:
+  - FPScrollingBanner (from `../`)
+
+EXTERNAL SOURCES:
+  FPScrollingBanner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FPScrollingBanner: 119d7bba99e0345dd5f7a2ced3deff5d5526e9dd
+
+PODFILE CHECKSUM: b7b15ed15fac3b893ab074bd0146d72d47f37bb8
+
+COCOAPODS: 0.39.0

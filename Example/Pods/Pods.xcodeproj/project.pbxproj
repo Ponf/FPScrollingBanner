@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E7DB351FCFCA70F86308084DFF9184 /* FPScrollingBannerCollectionFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D352D724A40D0AC2F3A4A1FD9BACB2D7 /* FPScrollingBannerCollectionFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2657EBB1715962949A8FC15DBFAD51BE /* FPScrollingBanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF0C2BD5C76022BAEF17A86082E217 /* FPScrollingBanner-dummy.m */; };
+		5B369A8AAA1BCE4BBC86ACDE98213804 /* FPScrollingBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A332194AA347C6C484550BE54FAF688 /* FPScrollingBanner.m */; };
+		5CECAA8CD62CC96B8A68778897F96299 /* FPScrollingBannerCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6BD3D4A15815E4BBD76C2768423BC1 /* FPScrollingBannerCollectionFlowLayout.m */; };
+		7441460C0A2E7B7E84AD22BE86ADE2AC /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		7AE50D24232E2648201507889CFB4DF9 /* FPScrollingBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EC3CD521E67805299825ECB217C100 /* FPScrollingBannerCell.m */; };
+		A4EC98F9EC5067D6DEE71DE3B5B0929C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28759A07EE01A78D8999B106204F9CD3 /* UIKit.framework */; };
+		A7F252A5902B142BBCE10BF8728F0BA5 /* FPScrollingBannerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A95474BCB03B0AD7AACB06AC2C5368EF /* FPScrollingBannerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC167C059F8AFDA69FD6BFCBE6093838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D752F4AFC91CCA2951AC6DE9E54BBD /* Foundation.framework */; };
+		D35824B708C37D087DD57FC20CFB8F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D752F4AFC91CCA2951AC6DE9E54BBD /* Foundation.framework */; };
+		D464D31B39CF60B74CDE0D0300F2ADEC /* FPScrollingBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = F3FC0EFB9D1B2E288F2B46803E25D3C4 /* FPScrollingBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B8E7A8AE54F3DE5641EF453D80B440 /* FPScrollingBanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF37D3356FCBBD5F24310B8D6A5B40E /* FPScrollingBanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA01F6B50871A36E67C1FB3F2A3263EB /* FPScrollingBannerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A57745EB622490A8033DA1DEE9D7C6 /* FPScrollingBannerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C10659E151000831DC0CD5493EBE18 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B06C9BA91DE9D0132390D03D58A09768 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3438032AFA6E283101EC0FA53C6238FF;
+			remoteInfo = FPScrollingBanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A332194AA347C6C484550BE54FAF688 /* FPScrollingBanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FPScrollingBanner.m; sourceTree = "<group>"; };
+		1DF37D3356FCBBD5F24310B8D6A5B40E /* FPScrollingBanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FPScrollingBanner-umbrella.h"; sourceTree = "<group>"; };
+		28759A07EE01A78D8999B106204F9CD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2A56C0056C0B0424A3817EB03C9928C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		36BD0F1684E19CCF73487071D8EE91B1 /* FPScrollingBanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FPScrollingBanner.xcconfig; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7D6BD3D4A15815E4BBD76C2768423BC1 /* FPScrollingBannerCollectionFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FPScrollingBannerCollectionFlowLayout.m; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9C5A32490A4D4278BEF9A6C6642E6C61 /* FPScrollingBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FPScrollingBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95474BCB03B0AD7AACB06AC2C5368EF /* FPScrollingBannerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FPScrollingBannerItem.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C5DF0C2BD5C76022BAEF17A86082E217 /* FPScrollingBanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FPScrollingBanner-dummy.m"; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D352D724A40D0AC2F3A4A1FD9BACB2D7 /* FPScrollingBannerCollectionFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FPScrollingBannerCollectionFlowLayout.h; sourceTree = "<group>"; };
+		D4D752F4AFC91CCA2951AC6DE9E54BBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6F08F396BD5FAF4E3CD601B069D4EA5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EC3CD521E67805299825ECB217C100 /* FPScrollingBannerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FPScrollingBannerCell.m; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C4ED3D15DDC4686C83FE5AF2461E76 /* FPScrollingBanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FPScrollingBanner-prefix.pch"; sourceTree = "<group>"; };
+		F3FC0EFB9D1B2E288F2B46803E25D3C4 /* FPScrollingBanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FPScrollingBanner.h; sourceTree = "<group>"; };
+		F6A57745EB622490A8033DA1DEE9D7C6 /* FPScrollingBannerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FPScrollingBannerCell.h; sourceTree = "<group>"; };
+		F85F068AE8BF150B9668B6E534FEAD0C /* FPScrollingBanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FPScrollingBanner.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4A82E16B1EA84D60D42DB61ADD5A0FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC167C059F8AFDA69FD6BFCBE6093838 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF7751BE378F3D399C6B5CA82AA9D309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35824B708C37D087DD57FC20CFB8F70 /* Foundation.framework in Frameworks */,
+				A4EC98F9EC5067D6DEE71DE3B5B0929C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03AD47F9D9EF9EECD36EE4BBCF7E03CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A32490A4D4278BEF9A6C6642E6C61 /* FPScrollingBanner.framework */,
+				D6F08F396BD5FAF4E3CD601B069D4EA5 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		275AB77980F3DF3881F6B7EA3BF2F52D /* FPScrollingBanner */ = {
+			isa = PBXGroup;
+			children = (
+				EFB8BAFEECC2C3EFB2386F9D9FC6557B /* Pod */,
+				C233B751CA2F3EF38EBB8A2BB99780BB /* Support Files */,
+			);
+			name = FPScrollingBanner;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		35630BD9D6771CB6733132550E871560 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F3FC0EFB9D1B2E288F2B46803E25D3C4 /* FPScrollingBanner.h */,
+				0A332194AA347C6C484550BE54FAF688 /* FPScrollingBanner.m */,
+				F6A57745EB622490A8033DA1DEE9D7C6 /* FPScrollingBannerCell.h */,
+				D8EC3CD521E67805299825ECB217C100 /* FPScrollingBannerCell.m */,
+				D352D724A40D0AC2F3A4A1FD9BACB2D7 /* FPScrollingBannerCollectionFlowLayout.h */,
+				7D6BD3D4A15815E4BBD76C2768423BC1 /* FPScrollingBannerCollectionFlowLayout.m */,
+				A95474BCB03B0AD7AACB06AC2C5368EF /* FPScrollingBannerItem.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6EC461C1435A31577346ED4ADA0BD5A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				708F782B52344C8B52F6239BEE5D154B /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		708F782B52344C8B52F6239BEE5D154B /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				D4D752F4AFC91CCA2951AC6DE9E54BBD /* Foundation.framework */,
+				28759A07EE01A78D8999B106204F9CD3 /* UIKit.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				806B4437CB98B70BA5EB98F5411CCA65 /* Development Pods */,
+				6EC461C1435A31577346ED4ADA0BD5A9 /* Frameworks */,
+				03AD47F9D9EF9EECD36EE4BBCF7E03CD /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		806B4437CB98B70BA5EB98F5411CCA65 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				275AB77980F3DF3881F6B7EA3BF2F52D /* FPScrollingBanner */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C233B751CA2F3EF38EBB8A2BB99780BB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F85F068AE8BF150B9668B6E534FEAD0C /* FPScrollingBanner.modulemap */,
+				36BD0F1684E19CCF73487071D8EE91B1 /* FPScrollingBanner.xcconfig */,
+				C5DF0C2BD5C76022BAEF17A86082E217 /* FPScrollingBanner-dummy.m */,
+				E9C4ED3D15DDC4686C83FE5AF2461E76 /* FPScrollingBanner-prefix.pch */,
+				1DF37D3356FCBBD5F24310B8D6A5B40E /* FPScrollingBanner-umbrella.h */,
+				2A56C0056C0B0424A3817EB03C9928C5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FPScrollingBanner";
+			sourceTree = "<group>";
+		};
+		EFB8BAFEECC2C3EFB2386F9D9FC6557B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				35630BD9D6771CB6733132550E871560 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		161D9E181E3E63AF4DD2B619759333AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B8E7A8AE54F3DE5641EF453D80B440 /* FPScrollingBanner-umbrella.h in Headers */,
+				D464D31B39CF60B74CDE0D0300F2ADEC /* FPScrollingBanner.h in Headers */,
+				EA01F6B50871A36E67C1FB3F2A3263EB /* FPScrollingBannerCell.h in Headers */,
+				01E7DB351FCFCA70F86308084DFF9184 /* FPScrollingBannerCollectionFlowLayout.h in Headers */,
+				A7F252A5902B142BBCE10BF8728F0BA5 /* FPScrollingBannerItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7FF14FDE98ECA38DE4F59583B05F6A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C10659E151000831DC0CD5493EBE18 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3438032AFA6E283101EC0FA53C6238FF /* FPScrollingBanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D0654F5EF48D10E3B1BDAB83C1C3E5 /* Build configuration list for PBXNativeTarget "FPScrollingBanner" */;
+			buildPhases = (
+				1844968B2843FF6044C55A1456853AF8 /* Sources */,
+				BF7751BE378F3D399C6B5CA82AA9D309 /* Frameworks */,
+				161D9E181E3E63AF4DD2B619759333AF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPScrollingBanner;
+			productName = FPScrollingBanner;
+			productReference = 9C5A32490A4D4278BEF9A6C6642E6C61 /* FPScrollingBanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A92C73158E0DB9311CE244C40D9690CF /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483B3EC9F31502664C8AA69506D5E37A /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				00CF2C6681B7E03853C634EBBC0FBB90 /* Sources */,
+				B4A82E16B1EA84D60D42DB61ADD5A0FE /* Frameworks */,
+				BE7FF14FDE98ECA38DE4F59583B05F6A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B3EB7EFBAE833C164F4BB6A68B0FBB4 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = D6F08F396BD5FAF4E3CD601B069D4EA5 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 03AD47F9D9EF9EECD36EE4BBCF7E03CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3438032AFA6E283101EC0FA53C6238FF /* FPScrollingBanner */,
+				A92C73158E0DB9311CE244C40D9690CF /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00CF2C6681B7E03853C634EBBC0FBB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441460C0A2E7B7E84AD22BE86ADE2AC /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1844968B2843FF6044C55A1456853AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2657EBB1715962949A8FC15DBFAD51BE /* FPScrollingBanner-dummy.m in Sources */,
+				5B369A8AAA1BCE4BBC86ACDE98213804 /* FPScrollingBanner.m in Sources */,
+				7AE50D24232E2648201507889CFB4DF9 /* FPScrollingBannerCell.m in Sources */,
+				5CECAA8CD62CC96B8A68778897F96299 /* FPScrollingBannerCollectionFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B3EB7EFBAE833C164F4BB6A68B0FBB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FPScrollingBanner;
+			target = 3438032AFA6E283101EC0FA53C6238FF /* FPScrollingBanner */;
+			targetProxy = B06C9BA91DE9D0132390D03D58A09768 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		53C663138A5F901006CD5B8D03531EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61220CEE3BC8370E054228E92865C313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		740D27EA84848741D63D733C55CCD6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F212BB260B9093C3EEB660775E5466E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BD0F1684E19CCF73487071D8EE91B1 /* FPScrollingBanner.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FPScrollingBanner/FPScrollingBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FPScrollingBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FPScrollingBanner/FPScrollingBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FPScrollingBanner;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C9C2286FDE21E34C49FF614AAA5FC03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36BD0F1684E19CCF73487071D8EE91B1 /* FPScrollingBanner.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FPScrollingBanner/FPScrollingBanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FPScrollingBanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FPScrollingBanner/FPScrollingBanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FPScrollingBanner;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D704B04E00139B8E8C866BBC08ED1B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61220CEE3BC8370E054228E92865C313 /* Debug */,
+				D704B04E00139B8E8C866BBC08ED1B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		483B3EC9F31502664C8AA69506D5E37A /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740D27EA84848741D63D733C55CCD6D8 /* Debug */,
+				53C663138A5F901006CD5B8D03531EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D0654F5EF48D10E3B1BDAB83C1C3E5 /* Build configuration list for PBXNativeTarget "FPScrollingBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F212BB260B9093C3EEB660775E5466E /* Debug */,
+				C9C2286FDE21E34C49FF614AAA5FC03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

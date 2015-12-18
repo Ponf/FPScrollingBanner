@@ -1,15 +1,24 @@
 # FPScrollingBanner
 
-[![CI Status](http://img.shields.io/travis/Filipp/FPScrollingBanner.svg?style=flat)](https://travis-ci.org/Filipp/FPScrollingBanner)
-[![Version](https://img.shields.io/cocoapods/v/FPScrollingBanner.svg?style=flat)](http://cocoapods.org/pods/FPScrollingBanner)
-[![License](https://img.shields.io/cocoapods/l/FPScrollingBanner.svg?style=flat)](http://cocoapods.org/pods/FPScrollingBanner)
-[![Platform](https://img.shields.io/cocoapods/p/FPScrollingBanner.svg?style=flat)](http://cocoapods.org/pods/FPScrollingBanner)
+This repo is attemt to create sliding UIImageViews like Scrolling Inset Banner at Apple TV's Top Shelf 
+(https://developer.apple.com/tvos/human-interface-guidelines/icons-and-images/#layered-images).
+
+Current feauters:
+- tvOS 9.0+ support
+- Any number of items (the best result with >= 3 items)
+- Infinitive scrolling
+
+Recommended control size: 1920x600
+
+Recommended images size: 1710x540
 
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+This control is build for tvOS 9.0+.
 
 ## Installation
 
@@ -22,7 +31,7 @@ pod "FPScrollingBanner"
 
 ## Author
 
-Filipp, ponf@inbox.ru
+Filipp, me@ponfius.com
 
 ## License
 

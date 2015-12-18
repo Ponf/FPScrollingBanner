@@ -1,12 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'FPScrollingBanner_Example', :exclusive => true do
-  pod "FPScrollingBanner", :path => "../"
-end
+pod "FPScrollingBanner", :path => "../"
 
-target 'FPScrollingBanner_Tests', :exclusive => true do
-  pod "FPScrollingBanner", :path => "../"
 
-  
-end
+
+
+

@@ -1,0 +1,6 @@
+framework module FPScrollingBanner {
+  umbrella header "FPScrollingBanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
