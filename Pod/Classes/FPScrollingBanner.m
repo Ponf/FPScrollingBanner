@@ -21,9 +21,16 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
 }
 
 - (void)awakeFromNib {
-    self.backgroundColor = [UIColor clearColor];
     [self setupCollectionView];
     [self setupConstraints];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self setupCollectionView];
+        [self setupConstraints];
+    }
+    return self;
 }
 
 - (UIView *)preferredFocusedView {
@@ -64,6 +71,10 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
 #pragma mark - UICollectionViewDelegate
 
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldUpdateFocusInContext:(UICollectionViewFocusUpdateContext *)context {
+    if (!context.nextFocusedIndexPath) {
+        //Allowing to leave UICollectionView
+        return YES;
+    }
     NSIndexPath *visibleIndexPath = [self centeredIndexPath];
     NSIndexPath *focusingIndexPath = context.nextFocusedIndexPath;
     //Allowing to focus only on neighbor items
@@ -108,6 +119,7 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
 #pragma mark - Private
 
 - (void)setupCollectionView {
+    self.backgroundColor = [UIColor clearColor];
     _collectionView = [[UICollectionView alloc] initWithFrame:self.frame collectionViewLayout:[self bannerFlowLayout]];
     [_collectionView registerClass:[FPScrollingBannerCell class] forCellWithReuseIdentifier:kFPScrollingBannerCellReuseIdentifier];
     _collectionView.dataSource = self;
