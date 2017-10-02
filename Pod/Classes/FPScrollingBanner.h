@@ -11,6 +11,9 @@
 
 @protocol FPScrollingBannerDelegate <NSObject>
 
+- (NSUInteger)scrollingBannerNumberOfItems:(FPScrollingBanner *)scrollingBanner;
+- (UICollectionViewCell *)scrollingBanner:(FPScrollingBanner *)scrollingBanner cellForItemAtIndexPath:(NSIndexPath *)indexPath inCollectionView:(UICollectionView *)collectionView;
+
 @optional
 - (void)scrollingBanner:(FPScrollingBanner *)scrollingBanner didSelectItemWithIndexPath:(NSIndexPath *)indexPath;
 
@@ -19,6 +22,9 @@
 @interface FPScrollingBanner : UIView
 
 @property (nonatomic, weak) id<FPScrollingBannerDelegate> delegate;
-@property (nonatomic, copy) NSArray<id<FPScrollingBannerItem>> *items;
+
+- (void)reloadData;
+
+- (void)registerCellWithNib:(UINib *)nib reuseIdentifier:(NSString *)reuseIdentifier;
 
 @end

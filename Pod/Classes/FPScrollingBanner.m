@@ -6,7 +6,6 @@
 #import "FPScrollingBanner.h"
 #import "FPScrollingBannerCollectionFlowLayout.h"
 #import "FPScrollingBannerCell.h"
-#import "FPScrollingBannerItem.h"
 
 NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCellReuseIdentifier";
 
@@ -16,8 +15,6 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
 
 @implementation FPScrollingBanner {
     UICollectionView *_collectionView;
-    NSUInteger _originalDataSourceCount;
-    NSArray *_dataSource;
 }
 
 - (void)awakeFromNib {
@@ -37,35 +34,29 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
     return _collectionView;
 }
 
-- (void)setItems:(NSArray<id<FPScrollingBannerItem>> *)items {
-    _originalDataSourceCount = items.count;
-    //Copying original array 3 times, result will be [a,b,c,a,b,c,a,b,c,]
-    NSMutableArray *workingArray = [items mutableCopy];
-    [workingArray addObjectsFromArray:items];
-    [workingArray addObjectsFromArray:items];
-    _dataSource = [workingArray copy];
+- (void)reloadData {
     [_collectionView reloadData];
-
-    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:_originalDataSourceCount inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
+    [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:[_delegate scrollingBannerNumberOfItems:self] inSection:0]
+                            atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
+                                    animated:NO];
     [_collectionView setNeedsFocusUpdate];
     [_collectionView updateFocusIfNeeded];
 }
 
-- (NSArray<id<FPScrollingBannerItem>> *)items {
-    return [_dataSource subarrayWithRange:NSMakeRange(0, _originalDataSourceCount)];
+- (void)registerCellWithNib:(UINib *)nib reuseIdentifier:(NSString *)reuseIdentifier {
+    [_collectionView registerNib:nib forCellWithReuseIdentifier:reuseIdentifier];
 }
 
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _dataSource.count;
+    return [_delegate scrollingBannerNumberOfItems:self] * 3;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    FPScrollingBannerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kFPScrollingBannerCellReuseIdentifier
-                                                                            forIndexPath:indexPath];
-    [cell configureWithScrollingBannerItem:_dataSource[(NSUInteger) indexPath.row]];
-    return cell;
+    id<FPScrollingBannerDelegate> delegate = _delegate;
+    NSIndexPath *originalIndexPath = [NSIndexPath indexPathForRow:(indexPath.row % [delegate scrollingBannerNumberOfItems:self]) inSection:0];
+    return [delegate scrollingBanner:self cellForItemAtIndexPath:originalIndexPath inCollectionView:_collectionView];
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -90,7 +81,7 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     id<FPScrollingBannerDelegate> delegate = _delegate;
     if ([delegate respondsToSelector:@selector(scrollingBanner:didSelectItemWithIndexPath:)]){
-        NSIndexPath *originalIndexPath = [NSIndexPath indexPathForRow:(indexPath.row % _originalDataSourceCount) inSection:0];
+        NSIndexPath *originalIndexPath = [NSIndexPath indexPathForRow:(indexPath.row % [delegate scrollingBannerNumberOfItems:self]) inSection:0];
         [delegate scrollingBanner:self didSelectItemWithIndexPath:originalIndexPath];
     }
 }
@@ -100,12 +91,13 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger currentIndex = [self centeredIndexPath].row;
     NSInteger targetIndex = currentIndex;
+    NSUInteger originalItemsCount = [_delegate scrollingBannerNumberOfItems:self];
     //If we closer to edge of DataSource, scrolling to other side of collection without animation
-    if (currentIndex < _originalDataSourceCount) {
-        targetIndex = currentIndex + _originalDataSourceCount;
+    if (currentIndex < originalItemsCount) {
+        targetIndex = currentIndex + originalItemsCount;
     }
-    else if (currentIndex > (_originalDataSourceCount * 2 - 1)) {
-        targetIndex = currentIndex - _originalDataSourceCount;
+    else if (currentIndex > (originalItemsCount * 2 - 1)) {
+        targetIndex = currentIndex - originalItemsCount;
     }
 
     if (targetIndex != currentIndex) {
@@ -130,8 +122,8 @@ NSString * const kFPScrollingBannerCellReuseIdentifier = @"kFPScrollingBannerCel
 
 - (FPScrollingBannerCollectionFlowLayout *)bannerFlowLayout {
     FPScrollingBannerCollectionFlowLayout *layout = [[FPScrollingBannerCollectionFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(1740, 600);
-    layout.minimumInteritemSpacing = 10.0f;
+    layout.itemSize = CGSizeMake(1120, 600);
+    layout.minimumInteritemSpacing = 40.0f;
     layout.minimumLineSpacing = 10.0f;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     return layout;
